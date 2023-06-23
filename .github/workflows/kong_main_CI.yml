@@ -146,7 +146,7 @@ jobs:
       - name: Edit Name Version US
         if: ${{ contains(env.REGIONS, 'US') }}
         run: |
-          curl 'https://us.api.konghq.com/konnect-api/api/service_versions/${{ env.SERVICE_VERSION_US_ID }}' \
+          curl -X 'PATCH' 'https://us.api.konghq.com/konnect-api/api/service_versions/${{ env.SERVICE_VERSION_US_ID }}' \
           -H 'content-type: application/json' -H 'authorization: Bearer ${{ secrets.KONNECT_TOKEN }}' \
           --data-raw '{"version":${{ env.VERSION }}}'
           
@@ -154,7 +154,7 @@ jobs:
       - name: Edit Name Version EU
         if: ${{ contains(env.REGIONS, 'EU') }}
         run: |
-          curl 'https://eu.api.konghq.com/konnect-api/api/service_versions/${{ env.SERVICE_VERSION_EU_ID }}' \
+          curl -X 'PATCH' 'https://eu.api.konghq.com/konnect-api/api/service_versions/${{ env.SERVICE_VERSION_EU_ID }}' \
           -H 'content-type: application/json' -H 'authorization: Bearer ${{ secrets.KONNECT_TOKEN }}' \
           --data-raw '{"version":${{ env.VERSION }}}'
 
