@@ -148,7 +148,7 @@ jobs:
         run: |
           curl -X 'PATCH' 'https://us.api.konghq.com/konnect-api/api/service_versions/${{ env.SERVICE_VERSION_US_ID }}' \
           -H 'content-type: application/json' -H 'authorization: Bearer ${{ secrets.KONNECT_TOKEN }}' \
-          --data-raw '{"version":${{ env.VERSION }}}'
+          --data-raw '{"version":"${{ env.VERSION }}"}'
           
       # Change Name of the service version EU
       - name: Edit Name Version EU
@@ -156,7 +156,7 @@ jobs:
         run: |
           curl -X 'PATCH' 'https://eu.api.konghq.com/konnect-api/api/service_versions/${{ env.SERVICE_VERSION_EU_ID }}' \
           -H 'content-type: application/json' -H 'authorization: Bearer ${{ secrets.KONNECT_TOKEN }}' \
-          --data-raw '{"version":${{ env.VERSION }}}'
+          --data-raw '{"version":"${{ env.VERSION }}"}'
 
       # Post specs for the service version US
       - name: Post specs US
