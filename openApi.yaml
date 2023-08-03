@@ -1,7 +1,7 @@
 openapi: 3.0.0
 info:
- title: SampleAPI
- version: "1.0"
+  title: SampleAPI
+  version: "1.0"
 tags:
   - description: Sample API
     name: Sample Echo API
