@@ -1,0 +1,28 @@
+openapi: 3.0.0
+info:
+  title: SampleAPI2
+  version: "1.0"
+tags:
+  - description: Sample API
+    name: Sample Echo API
+paths:
+  /rates:
+    get:
+      responses:
+        "200":
+          description: An echo rate message.
+      summary: Return a echo rate message.
+      operationId: getRate
+      tags:
+        - Generate echo rate message
+  /test:
+    get:
+      responses:
+        "200":
+          description: An echo message.
+      summary: Return a echo message.
+      operationId: getEcho
+      tags:
+        - Generate echo message
+servers:
+  - url: https://httpbin.org/anything
