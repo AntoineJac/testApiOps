@@ -1,0 +1,9 @@
+{ 
+"status": "Awesome!",
+"entitlements": [
+ "F-BE-AP-L7-TARIF-GEN",
+ "F-BE-AP-L7-TARIF-VEHICLE",
+ "F-BE-AP-SGE-AddressCity",
+ "F-BE-AP-SGE-AddressCityStreet"
+ ]
+}
