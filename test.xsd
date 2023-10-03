@@ -12,7 +12,7 @@
             <xsd:element name="ID" type="xsd:string" minOccurs="0"/>
             <xsd:element name="Title" type="xsd:string"/>
             <xsd:element name="Author" type="xsd:string"/>
-            <xsd:element name="Antoine" type="xsd:string"/>
+            <xsd:element name="Antoine2" type="xsd:string"/>
           </xsd:sequence>
         </xsd:complexType>
       </xsd:element>
